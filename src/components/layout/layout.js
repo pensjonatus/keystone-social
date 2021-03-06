@@ -6,9 +6,9 @@ export default function Layout({ children }) {
   return (
     <div>
       <header>
-        <a className="logo" href="/">
+        <div className="logo">
           <Logo />
-        </a>
+        </div>
       </header>
       <Border />
       <main>{children}</main>

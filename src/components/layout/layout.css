@@ -39,3 +39,31 @@ footer p {
   color: var(--color-gentle);
   font-size: 8px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+.buttonBar {
+  padding: 16px 0;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 16px 8px;
+  border: 1px solid var(--color-gentle);
+  background-color: var(--color-slight);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}

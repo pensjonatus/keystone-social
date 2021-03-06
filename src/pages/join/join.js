@@ -1,6 +1,7 @@
-import Logo from "../components/layout/logo";
-import Border from "../components/layout/border";
+import Logo from "../../components/layout/logo";
+import Border from "../../components/layout/border";
 import styles from "./join.module.css";
+import { Link } from "react-router-dom";
 
 export default function Join() {
   return (
@@ -17,10 +18,14 @@ export default function Join() {
           able to interact with them. You can only interact with bots.
         </p>
         <p>
-          Nothing you post will be saved anywhere. The experience is purely in
+          Nothing you post will be saved anywhere. Your experience is purely in
           the moment.
         </p>
-        <button>Become the Keystone</button>
+        <div className="buttonBar">
+          <Link to="/feed" className="button">
+            Become the Keystone
+          </Link>
+        </div>
       </div>
     </div>
   );
