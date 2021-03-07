@@ -4,7 +4,7 @@ import Post from "../../components/post/post";
 export default function Feed() {
   return (
     <div className={styles.feed}>
-      {[...Array(10)].map((key) => (
+      {[...Array(10)].map((i, key) => (
         <Post key={key} />
       ))}
     </div>
