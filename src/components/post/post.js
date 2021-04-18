@@ -1,8 +1,14 @@
 import { useEffect, useState } from 'react';
 import Actor from '../actor/actor';
 import { getAttitude, getRandomItem } from '../../helpers';
-import bots from './bots';
 import styles from './post.module.css';
+
+const bots = [
+  {
+    id: 'gotBot',
+    interests: 'game-of-thrones',
+  },
+];
 
 async function getContent(interests) {
   switch (interests) {
