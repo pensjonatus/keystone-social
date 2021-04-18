@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
-import Actor from "../actor/actor";
-import { getAttitude, getRandomItem } from "../../helpers";
-import bots from "./bots";
-import styles from "./post.module.css";
+import { useEffect, useState } from 'react';
+import Actor from '../actor/actor';
+import { getAttitude, getRandomItem } from '../../helpers';
+import bots from './bots';
+import styles from './post.module.css';
 
 async function getContent(interests) {
   switch (interests) {
-    case "game-of-thrones":
+    case 'game-of-thrones':
       const content = await fetch(
         `https://anapioficeandfire.com/api/characters/3${Math.floor(
           Math.random() * 100
@@ -15,7 +15,7 @@ async function getContent(interests) {
         .then((result) => result.json())
         .then((character) => {
           const miniRant = [];
-          const pronoun = character.gender === "Male" ? "he" : "she";
+          const pronoun = character.gender === 'Male' ? 'he' : 'she';
           miniRant.push(`${character.name} is ${getAttitude()}.`);
           if (character.titles && character.titles[0].length > 0) {
             miniRant.push(
@@ -28,7 +28,7 @@ async function getContent(interests) {
             );
           }
           miniRant.push();
-          return miniRant.join(" ");
+          return miniRant.join(' ');
         });
       return content;
 
@@ -38,7 +38,7 @@ async function getContent(interests) {
 }
 
 async function getActor() {
-  const actorData = await fetch("https://randomuser.me/api/")
+  const actorData = await fetch('https://randomuser.me/api/')
     .then((result) => result.json())
     .then((json) => json.results[0]);
   return {

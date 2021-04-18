@@ -1,4 +1,4 @@
-import styles from "./actor.module.css";
+import styles from './actor.module.css';
 
 export default function Actor({ name, avatar, location }) {
   return (

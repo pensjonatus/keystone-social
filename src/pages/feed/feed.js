@@ -1,5 +1,5 @@
-import styles from "./feed.module.css";
-import Post from "../../components/post/post";
+import styles from './feed.module.css';
+import Post from '../../components/post/post';
 
 export default function Feed() {
   return (

@@ -1,8 +1,8 @@
-const actors = [
+const bots = [
   {
-    id: "gotBot",
-    interests: "game-of-thrones",
+    id: 'gotBot',
+    interests: 'game-of-thrones',
   },
 ];
 
-export default actors;
+export default bots;

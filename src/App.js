@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Layout from "./components/layout/layout";
-import Join from "./pages/join/join";
-import Feed from "./pages/feed/feed";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Layout from './components/layout/layout';
+import Join from './pages/join/join';
+import Feed from './pages/feed/feed';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Layout>
           <Switch>
             <Route path="/feed">
-              <Feed/>
+              <Feed />
             </Route>
             <Route path="/">
               <Join />

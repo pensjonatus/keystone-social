@@ -1,6 +1,6 @@
-import Logo from "./logo";
-import Border from "./border";
-import "./layout.css";
+import Logo from './logo';
+import Border from './border';
+import './layout.css';
 
 export default function Layout({ children }) {
   return (

@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 .logo {
-  font-family: "Teko", sans-serif;
+  font-family: 'Teko', sans-serif;
   color: white;
   text-decoration: none;
 }

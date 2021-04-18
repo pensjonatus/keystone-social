@@ -1,7 +1,7 @@
-import Logo from "../../components/layout/logo";
-import Border from "../../components/layout/border";
-import styles from "./join.module.css";
-import { Link } from "react-router-dom";
+import Logo from '../../components/layout/logo';
+import Border from '../../components/layout/border';
+import styles from './join.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Join() {
   return (
